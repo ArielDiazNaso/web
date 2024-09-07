@@ -1,0 +1,123 @@
+body {
+    width: 100%;
+    background-color: #000;
+    color: #fff; 
+    font-size: 2.1rem;
+    line-height: 1.6; 
+    margin-top: 7rem; 
+}
+
+footer {
+    margin-top: 20vh;
+}
+
+
+#titulo {
+    margin-bottom: 1vh;
+    text-decoration: underline; 
+    text-decoration-color: #0059ce; 
+    text-decoration-thickness: 5px; 
+    text-underline-offset: 5px; 
+}
+
+.contenedor-noticia {
+    padding: 2vh;
+    background-color: #111;
+    border-top: 5px solid #0059ce;
+    border-bottom: 5px solid #0059ce;
+    height: auto;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    display: grid;
+    grid-template-areas:
+        "img img img espacio text text text text"
+        "img img img espacio text text text text"
+        "img img img espacio text text text text"
+        "img img img espacio text text text text";
+    grid-template-rows: auto;
+    grid-template-columns: 12fr 12fr 12fr 2fr 6fr 6fr 6fr 6fr;
+    margin-bottom: 20vh;
+}
+
+.seccion-img {
+    grid-area: img;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: auto;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.seccion-img img {
+    width: 100%; 
+    max-height: 100vh;
+    object-fit: contain;
+}
+
+.flecha {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 1rem;
+    position: absolute;
+    top: 50vh;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.flecha.izquierda {
+    left: 0;
+}
+
+.flecha.derecha {
+    right: 0;
+}
+
+.seccion-vacio {
+    grid-area: espacio;
+}
+
+.seccion-text {
+    padding: 5vh;
+    grid-area: text;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    overflow: hidden; 
+    word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+    .contenedor-noticia {
+       
+        grid-template-areas:
+            "img img img img img img img img"
+            "text text text text text text text text";
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: auto;
+        height: auto;
+    }
+
+    .flecha{
+        transform: translateY(50%);
+
+    }
+
+    
+
+    .seccion-img img {
+        width: 100%;  
+        max-height: 50vh;
+    }
+
+    .flecha {
+        top: 40%;  
+    }
+
+    .seccion-text {
+        padding: 2vh;
+    }
+}

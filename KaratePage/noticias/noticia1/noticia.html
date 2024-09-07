@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="icon" href="/KaratePage/images/isotipodorado.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="/KaratePage/styles.css">
+    <link rel="stylesheet" href="noticia.css">
+    <title>Nievas Karate</title>
+</head>
+<body>
+    <!-- Comienzo del header -->
+    <header class="header">
+        <a href="/karatepage/index.html#" class="logo">
+            <img src="/KaratePage/images/blancohorizontal.png" alt="Nievas Karate Logo">
+        </a>
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <a href="/KaratePage/index.html#home">Home</a>
+            <a href="/KaratePage/index.html#about">Sobre nosotros</a>
+            <a href="/KaratePage/index.html#pricing">Horarios</a>
+            <a href="/KaratePage/index.html#features">Características</a>
+            <a href="/KaratePage/index.html#blogs">Noticias</a>
+            <a href="/KaratePage/index.html#testimonios">Testimonios</a>
+            <a href="/KaratePage/calend.html" class="instagram-btn" target=_blank>
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+            </a>
+        </nav>
+        
+    </header>
+    <!-- Fin del header -->
+
+    <!-- Comienzo de la sección de noticias -->
+    
+    
+    <div class="contenedor-noticia">
+        
+        <div class="seccion-img">
+            <h4 id="localidad">Buenos Aires</h4>
+            <h2 id="titulo">Torneo provincial 2024</h2>
+            
+            <button class="flecha izquierda" onclick="cambiarImagen(-1)">&#9664;</button>
+            <img id="imagen-principal" src="/KaratePage/images/ejemplo2.JPG" alt="Descripción de la imagen">
+            <button class="flecha derecha" onclick="cambiarImagen(1)">&#9654;</button>
+
+            <p id="epigrafe">Lucha Categoria 65kg</p>
+        </div>
+        <div class="seccion-vacio">
+
+
+        </div>
+        <div class="seccion-text">
+            <p> El Dojo Nievas Karate de Buenos Aires tuvo una destacada participación en el Torneo Provincial de Karate 2024, demostrando una vez más su excelencia en el arte marcial. Los karatecas del dojo compitieron en diversas categorías, logrando sobresalir con una técnica impecable y un espíritu de lucha inquebrantable.
+
+                Durante la competencia, los alumnos del dojo enfrentaron a algunos de los mejores karatecas de la provincia, consiguiendo varios podios en sus respectivas categorías. En particular, la categoría de 65 kg fue escenario de una de las victorias más celebradas por el equipo, destacándose un alumno de Nievas Karate como campeón indiscutido.
+                
+                El sensei Nievas expresó su orgullo por el desempeño de sus alumnos, subrayando que el esfuerzo y la dedicación diaria en el dojo son fundamentales para estos logros.
+                
+                </p>
+            
+        </div>
+
+
+
+    </div>
+
+
+    <!-- Fin de la sección de noticias -->
+
+
+
+ <!-- inicio seccion Blogs -->
+ <section class="blogs" id="blogs">
+
+    <h1 class="heading"> <span>Noticias</span></h1>
+
+    <div class="swiper blogs-slider">
+
+        <div class="swiper-wrapper">
+
+            <!-- Noticia 1 -->
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="/karatepage/images/ejemplo1.webp" alt="Noticia 1">
+                </div>
+                <div class="content">
+                    <div class="link">
+                        <a href="#">Nievas Karate</a>
+                        <span>|</span>
+                        <a href="#">21st may, 2024</a>
+                    </div>
+                    <h3>Torneo Provincial 2024</h3>
+                    <p>Torneo oficial de WKF Celebrado en la provincia de buenos aires</p>
+                    <a href="noticias/noticia1/noticia.html" class="btn">leer más</a> <!-- Enlace a noticia.html con id=1 -->
+                </div>
+            </div>
+
+            <!-- Noticia 2 -->
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="/karatepage/images/news.jpg" alt="Noticia 2">
+                </div>
+                <div class="content">
+                    <div class="link">
+                        <a href="#">Nievas Karate</a>
+                        <span>|</span>
+                        <a href="#">21st may, 2024</a>
+                    </div>
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, provident!</p>
+                    <a href="noticia.html" class="btn">leer más</a> <!-- Enlace a noticia.html con id=2 -->
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+</section>
+
+
+    <!-- final seccion blogs  -->
+
+
+
+    <!-- comienzo del pie de página -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-location">
+                <h3>Ubicación</h3>
+                <p>Rodriguez Peña 2842, Mar del Plata</p>
+            </div>
+            <div class="footer-social">
+                <h3>Síguenos en Instagram</h3>
+                <a href="https://www.instagram.com/nievaskarate?utm_source=ig_web_button_share_sheet&igshid=ZDNlZDc0MzIxNw==" class="instagram-btn" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <div class="footer-rights">
+                <p>&copy; 2024 Diaz Naso Ariel, Joaquin Erquega Trofa . Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- fin del pie de página -->
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+   <script src="noticia.js"></script>
+   <script src="/KaratePage/script.js"></script>
+</body>
+</html>
+
+
